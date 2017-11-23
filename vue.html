@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue学习</title>
+	<meta charset="utf-8">
+<script type="text/javascript" src='https://cdn.bootcss.com/vue/2.2.2/vue.min.js'></script>
+</head>
+<body>
+		hello world!
+	<span id="app">{{message}}</span>
+</body>
+<script type="text/javascript">
+	 var app=new Vue({
+		el:'#app',
+		data:{
+			message:'one'
+		}
+	})
+
+	setTimeout(function(){app.message='two'},3000)
+</script>
+</html>
